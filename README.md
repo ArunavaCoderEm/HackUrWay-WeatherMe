@@ -1,12 +1,12 @@
 # HackUrWay-WeatherMe
 WeatherMe is a website for the HackUrWay Hackathon in our college that displays weather details. Under Development.
 
-#==> 
+# ==> 
 This Website has dark mode and light mode with easy toggle optons. To check the weather of your location you can type it in the search bar or tap the mic icon and speak out your location. With help of javascript it captures your voice and maintains the value as your output.
       
       {webkitSpeechRecognition}
 
-#==> 
+# ==> 
 This website can show many functions like AQI HUMIDITY WIND SUNRISE SUNSET RAIN CLOUDY OR NOT AND TEMPERATURE.And also a next 6 days forecast.With a custom Scrollbar and a custom pre-loader.
     
       {openweather API}
