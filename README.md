@@ -7,7 +7,7 @@ This Website has dark mode and light mode with easy toggle optons. To check the 
       {webkitSpeechRecognition}
 
 #==> 
-This website can show many functions like AQI HUMIDITY WIND SUNRISE SUNSET RAIN CLOUDY OR NOT AND TEMPERATURE.And also a next 6 days forecast.
+This website can show many functions like AQI HUMIDITY WIND SUNRISE SUNSET RAIN CLOUDY OR NOT AND TEMPERATURE.And also a next 6 days forecast.With a custom Scrollbar.
     
       {openweather API}
 
