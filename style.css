@@ -1,0 +1,603 @@
+/* Importing */
+
+
+/* Styling */
+
+* {
+    padding: 0 0;
+    margin: 0 0;
+}
+
+
+
+
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent,rgb(184, 4, 184),rgb(7, 203, 7),rgb(169, 163, 163));
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent,rgb(40, 4, 184),rgb(7, 203, 7),rgb(213, 6, 6));
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color:#c4c0c0;
+  --secondary-color: #104816;
+  --summer-theme: linear-gradient(65deg,orange,red,yellow)
+  transition: 0.5s;
+}
+
+.dark-theme {
+  --primary-color:#222121;
+  --secondary-color: #4f07b4;
+  transition: 0.5s;
+}
+
+body {
+    padding: 0 0;
+    margin: 0 0;   
+}
+
+#icon {
+  width: 30px;
+  margin-top: 0.col2cm;
+  height: 30px;
+  cursor: pointer;
+}
+
+nav {
+background: linear-gradient(60deg,rgb(177, 1, 177),rgb(236, 110, 131),rgb(217, 144, 8));
+height: 60px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: sticky;
+top: 0;
+z-index: 999;
+width: 100%;
+}
+body {
+    font-family: "Segoe UI", "Open Sans" sans-serif;
+    font-size: 1em;
+    background-color: var(--primary-color);
+    margin: 0; }
+  
+  .icon {
+    font-size: 1.5em; }
+  
+    #iconshhh {
+      color: #9028e4;
+    }
+  
+    #nsd {
+      color: #287de4;
+    }
+    
+
+  #dailyForecast {
+    display: flex;
+    vertical-align: middle;
+    margin-bottom: 50px; }
+    #dailyForecast .searchBar {
+      padding: 20px 0; }
+      #dailyForecast .searchBar #locSearchBox {
+        display: inline-block;
+        width: 100%;
+        font-size: 1em;
+        text-align: center;
+        border: none;
+        border-radius: 3px;
+        padding: 10px;
+        box-shadow: 0 0 15px 1px #bfa8bc;
+        transition: all 0.3s; }
+        #dailyForecast .searchBar #locSearchBox:focus {
+          outline: none;
+          box-shadow: 5px 5px 30px 5px #bfa8bc; }
+    #dailyForecast .tempBox {
+      color: #fff;
+      padding: 15px;
+      margin-top: 20px;
+      font-weight: bold;
+      border-radius: 8px;
+      background: linear-gradient(160deg, #eaae61, #933464, #B236D0);
+      box-shadow: 5px 5px 25px 3px #8d3a82; }
+      #dailyForecast .tempBox .currentTemp {
+        font-size: 5em; }
+      #dailyForecast .tempBox .unit {
+        font-size: 3em; }
+      #dailyForecast .tempBox p.m0 {
+        margin: 0; }
+      #dailyForecast .tempBox .convertToggle .icon {
+        position: relative;
+        top: 4px; }
+      #dailyForecast .tempBox .weatherCondition {
+        font-size: 3em; }
+      #dailyForecast .tempBox .tempBoxSubInfo {
+        font-size: 0.8em;
+        padding: 20px 0 0; }
+        #dailyForecast .tempBox .tempBoxSubInfo p {
+          margin: 0; }
+    #dailyForecast .dashboard {
+      margin-top: 20px;
+      border-radius: 8px; }
+      #dailyForecast .dashboard .dashboardDaily {
+        position: relative; }
+        #dailyForecast .dashboard .dashboardDaily .expect {
+          height: 300px;
+          padding: 20px;
+          background: linear-gradient(45deg, #273c5a, #bbc10f);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          color: #fff;
+          position: relative;
+          box-shadow: 0 0 25px 3px #bfa8bc; }
+          #dailyForecast .dashboard .dashboardDaily .expect #expectIcon {
+            position: absolute;
+            left: 102px;
+            top: 35px; }
+          #dailyForecast .dashboard .dashboardDaily .expect p {
+            position: relative;
+            top: 20px; }
+        #dailyForecast .dashboard .dashboardDaily .thin {
+          font-size: 1em;
+          font-weight: bold;
+          text-transform: uppercase; }
+        #dailyForecast .dashboard .dashboardDaily .tempMaxBox, #dailyForecast .dashboard .dashboardDaily .tempMinBox {
+          height: 150px;
+          border-radius: 50%;
+          position: relative;
+          color: #fff;
+          font-weight: bold;
+          font-size: 1.2em;
+          display: flex;
+          align-items: center;
+          z-index: 2;
+          box-shadow: 0 0 25px 1px rgba(79, 75, 78, 0.6); }
+          #dailyForecast .dashboard .dashboardDaily .tempMaxBox p, #dailyForecast .dashboard .dashboardDaily .tempMinBox p {
+            display: inline-block; }
+        #dailyForecast .dashboard .dashboardDaily .tempMaxBox {
+          background: linear-gradient(45deg, #bf0763, #B236D0);
+          left: 40px; }
+          #dailyForecast .dashboard .dashboardDaily .tempMaxBox p {
+            margin: 0 auto 40px; }
+        #dailyForecast .dashboard .dashboardDaily .tempMinBox {
+          background: linear-gradient(45deg, #da0aba, #6f479a);
+          top: 150px;
+          right: 40px; }
+          #dailyForecast .dashboard .dashboardDaily .tempMinBox p {
+            margin: 40px auto 0; }
+      #dailyForecast .dashboard .sunTimes {
+        margin-top: 5%;
+        font-weight: bold;
+        font-size: 0.8em; }
+      #dailyForecast .dashboard .weatherQuote {
+        margin-top: 5%;
+        font-size: 1em;
+        font-weight: bold;
+      color: rgb(183, 0, 255); }
+      #dailyForecast .dashboard .weeklyButton {
+        margin-top: 5%; }
+        #dailyForecast .dashboard .weeklyButton a {
+          padding: 15px;
+          border-radius: 5px;
+          text-decoration: none;
+          font-weight: bold;
+          color: #fff;
+          background-image: linear-gradient(220deg, #db5290, #6964fb);
+          box-shadow: 0 0 25px 3px #bfa8bc;
+          transition: 0.5s; }
+          #dailyForecast .dashboard .weeklyButton a:hover {
+            box-shadow: 5px 5px 25px 6px #bfa8bc; }
+          #dailyForecast .dashboard .weeklyButton a i {
+            font-size: 1.2em;
+            position: relative;
+            top: 3px; }
+  
+  #weeklyForecast {
+    padding: 20px 0 30px; }
+    #weeklyForecast h3 {
+      line-height: 50px;
+      margin: 20px 0 30px; }
+    #weeklyForecast .weekRows {
+      margin: 50px 0; }
+      #weeklyForecast .weekRows .dayCard {
+        box-shadow: 0 0 25px 3px #bfa8bc;
+        overflow: hidden;
+        border-radius: 5px; }
+        #weeklyForecast .weekRows .dayCard p {
+          display: inline-block; }
+        #weeklyForecast .weekRows .dayCard .dayIconHighlight {
+          background-color: var(--secondary-color);
+          color: #fff;
+          padding: 30px 10px 10px; }
+          #weeklyForecast .weekRows .dayCard .dayIconHighlight .dayMaxMin {
+            position: relative; }
+            #weeklyForecast .weekRows .dayCard .dayIconHighlight .dayMaxMin p {
+              position: absolute; }
+              #weeklyForecast .weekRows .dayCard .dayIconHighlight .dayMaxMin p:first-child {
+                left: 0; }
+              #weeklyForecast .weekRows .dayCard .dayIconHighlight .dayMaxMin p:last-child {
+                right: 0; }
+                #weeklyForecast .weekRows .dayCard .dayIconHighlight .dayMaxMin p:last-child i {
+                  position: relative;
+                  top: 5px; }
+        #weeklyForecast .weekRows .dayCard .dayInfoHighlight {
+          background-color: #fff;
+          padding: 10px; }
+          #weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDay p {
+            font-size: 1.5em;
+            font-weight: bold; }
+          #weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDaySummary {
+            height: 50px;
+            margin-bottom: 20px; }
+            #weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDaySummary p {
+              margin: 0; }
+          #weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDaySun p {
+            margin-right: 20px;
+            padding-top: 5px; }
+            #weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDaySun p:last-child {
+              margin-right: 0;
+              margin-left: 20px; }
+          #weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDayWindnHumidity p {
+            margin-right: 10px;
+            font-size: 0.8em; }
+            #weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDayWindnHumidity p:last-child {
+              margin-right: 0; }
+  
+  #footer .love {
+    margin: 10px auto;
+    text-align: center; }
+    #footer .love .heartbeat {
+      color: #e80d2e;
+      font-size: 16px; }
+    #footer .love a {
+      text-decoration: none; }
+  
+  .pac-container {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 5px; }
+  
+  .pac-item, .pac-item-query {
+    text-align: center;
+    padding: 10px;
+    font-family: inherit;
+    font-size: inherit; }
+  
+  @media (min-width: 1920px) {
+    #dailyForecast {
+      margin-bottom: 300px; } }
+  @media (max-width: 1199px) {
+    #dailyForecast .dashboard .dashboardDaily {
+      margin-top: 50px; }
+      #dailyForecast .dashboard .dashboardDaily .tempMaxBox > p {
+        position: relative;
+        top: 15px; }
+      #dailyForecast .dashboard .dashboardDaily .tempMinBox p {
+        position: relative;
+        bottom: 10px; }
+    #dailyForecast .dashboard .sunTimes {
+      margin-top: 50px; }
+      #dailyForecast .dashboard .sunTimes p i {
+        display: block; }
+    #dailyForecast .dashboard .weeklyButton {
+      margin: 40px 0; }
+  
+    #weeklyForecast h3 {
+      margin: 50px 0; }
+    #weeklyForecast .weekRows {
+      margin: 0; }
+      #weeklyForecast .weekRows .dayCard {
+        margin-bottom: 50px; }
+        #weeklyForecast .weekRows .dayCard .dayIconHighlight .dayMaxMin p {
+          position: relative; }
+        #weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDaySummary {
+          margin-bottom: 40px; }
+        #weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDaySun p {
+          margin: 0; } }
+  @media (max-width: 961px) {
+    #weeklyForecast .weekRows {
+      margin: 0; }
+      #weeklyForecast .weekRows .dayCard .dayIconHighlight .dayMaxMin p {
+        position: absolute; }
+        #weeklyForecast .weekRows .dayCard .dayIconHighlight .dayMaxMin p:first-child {
+          left: 5px; }
+        #weeklyForecast .weekRows .dayCard .dayIconHighlight .dayMaxMin p:last-child {
+          right: 5px; } }
+  @media (max-width: 767px) {
+    #weeklyForecast .weekRows {
+      margin: 0; }
+      #weeklyForecast .weekRows .dayCard .dayIconHighlight .dayMaxMin p {
+        position: relative;
+        display: block; }
+        #weeklyForecast .weekRows .dayCard .dayIconHighlight .dayMaxMin p:first-child {
+          left: 0; }
+        #weeklyForecast .weekRows .dayCard .dayIconHighlight .dayMaxMin p:last-child {
+          right: 0; } }
+  @media (max-width: 415px) {
+    #dailyForecast .tempBox {
+      margin-bottom: 50px; }
+      #dailyForecast .tempBox .currentTemp {
+        font-size: 3em; }
+      #dailyForecast .tempBox .unit {
+        font-size: 1.5em; }
+      #dailyForecast .tempBox .weatherCondition {
+        font-size: 2em; }
+      #dailyForecast .tempBox .feels {
+        font-size: 0.8em; }
+      #dailyForecast .tempBox .tempBoxSubInfo {
+        font-size: 0.7em; }
+    #dailyForecast .dashboard .dashboardDaily {
+      margin-top: 20px; }
+      #dailyForecast .dashboard .dashboardDaily .expect {
+        height: 195px;
+        font-size: 0.8em; }
+        #dailyForecast .dashboard .dashboardDaily .expect #expectIcon {
+          width: 60px;
+          height: 60px;
+          left: 35%;
+          top: 10%; }
+      #dailyForecast .dashboard .dashboardDaily .tempMaxBox, #dailyForecast .dashboard .dashboardDaily .tempMinBox {
+        height: 95px;
+        font-size: 0.8em;
+        position: relative; }
+      #dailyForecast .dashboard .dashboardDaily .tempMaxBox {
+        top: -25px; }
+      #dailyForecast .dashboard .dashboardDaily .tempMinBox {
+        top: 130px; }
+    #dailyForecast .dashboard .sunTimes {
+      margin-top: 50px; }
+      #dailyForecast .dashboard .sunTimes p {
+        font-size: 0.9em; }
+    #dailyForecast .dashboard .weeklyButton {
+      margin: 40px 0; }
+  
+    #weeklyForecast h3 {
+      font-size: 1em;
+      line-height: 25px;
+      margin-bottom: 50px; }
+    #weeklyForecast .weekRows .dayCard {
+      width: 100%; }
+      #weeklyForecast .weekRows .dayCard .dayIconHighlight .dayMaxMin > p {
+        position: static; }
+      #weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDay p {
+        font-size: 1.2em; }
+      #weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDaySummary {
+        height: auto;
+        margin-bottom: 10px; }
+        #weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDaySummary p {
+          margin: 10px 0; }
+      #weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDaySun > {
+        position: static;
+        margin: 20px auto; }
+        #weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDaySun > p {
+          margin: 0;
+          text-align: center; }
+          #weeklyForecast .weekRows .dayCard .dayInfoHighlight .weekDaySun > p:last-child {
+            margin: 0; }
+  
+    #footer p {
+      width: 50%; } }
+  @media (max-width: 321px) {
+    #dailyForecast .dashboard .dashboardDaily .expect {
+      height: 180px;
+      font-size: 0.7em; }
+      #dailyForecast .dashboard .dashboardDaily .expect #expectIcon {
+        display: none; }
+    #dailyForecast .dashboard .dashboardDaily .tempMaxBox, #dailyForecast .dashboard .dashboardDaily .tempMinBox {
+      height: 80px;
+      font-size: 0.7em;
+      position: relative; }
+  
+    #weeklyForecast .dayIconHighlight canvas {
+      position: relative;
+      right: 10px; }
+  
+    #footer p {
+      width: 50%; } }
+
+.nav-container {
+max-width: 1000px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 90%;
+}
+
+.menu a:hover {
+  border-bottom: 2px solid aqua;
+}
+
+.logo {
+color: #fff;
+font-size: 24px;
+font-weight: bold;
+cursor: pointer;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#picmic {
+  width: 45px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+
+.menu {
+display: flex;
+justify-content: space-between;
+align-items: center;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.menu li {
+margin-left: 20px;
+}
+
+.menu a {
+color: #0593c2;
+font-size: 18px;
+text-decoration: none;
+font-weight: 1500;
+transition: 0.5s;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.search-container {
+display: flex;
+align-items: center;
+}
+
+#search {
+    border-radius: 50px;
+}
+
+.search-container form {
+margin: 0;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #bfbaba;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #474444;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  -webkit-animation: sk-bounce 2s infinite ease-in-out;
+  animation: sk-bounce 2s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  color: #0f0b0b;
+  margin-top: 30px;
+  font-weight: 1200;
+}
+
+
+
+.search-container input[type="text"] {
+padding: 8px 10px;
+border: none;
+border-radius: 32px;
+border-radius: 3px;
+font-size: 16px;
+}
+
+.search-container button[type="submit"] {
+padding: 8px 10px;
+border: none;
+border-radius: 50px;
+background-color: #fff;
+cursor: pointer;
+}
+
+.menu a:hover {
+    color: rgb(173, 48, 3);
+}
+
+.menu-icon {
+display: none;
+color: #fff;
+font-size: 28px;
+cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+.menu {
+    display: none;
+}
+
+.menu-icon {
+    display: block;
+}
+
+.menu-icon.active {
+    transform: rotate(90deg);
+}
+
+.menu-icon i {
+    transition: all 0.3s ease;
+}
+
+.menu-icon.active i {
+    transform: rotate(45deg);
+}
+
+.nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nav-container .logo {
+    margin-bottom: 20px;
+}
+
+.search-container {
+    margin-top: 10px;
+}
+
+.search-container input[type="text"] {
+    width: 100%;
+}
+}
